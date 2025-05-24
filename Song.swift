@@ -11,7 +11,7 @@ import Foundation
 struct Song {
     let title: String
     let artist: String
-    let fileName: String       // 예: "song1"
-    let albumImageName: String // 예: "album1"
+    let fileName: String
+    let albumImageName: String
     let lyrics: [(time: TimeInterval, text: String)]
 }
