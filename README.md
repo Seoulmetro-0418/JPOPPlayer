@@ -1,4 +1,5 @@
 # JPOPPlayer🎧🇯🇵
+About JPOPPlayer
 
 	JPOPPlayer is a music player specially designed for J-POP fans and Japanese language learners.
 	With a built-in lyric timeline, it lets you follow along with the lyrics in real-time as the song plays,
