@@ -1,11 +1,3 @@
-//
-//  AudioManager.swift
-//  JPOPPlayer
-//
-//  Created by Hyunjun Kim on 5/17/25.
-//
-
-
 import Foundation
 import AVFoundation
 import MediaPlayer
