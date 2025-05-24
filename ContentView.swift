@@ -1,11 +1,3 @@
-//
-//  ContentView.swift
-//  JPOPPlayer
-//
-//  Created by Hyunjun Kim on 5/17/25.
-//
-
-
 import SwiftUI
 
 struct ContentView: View {
