@@ -1,34 +1,54 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     @StateObject var audioManager = AudioManager()
     @Environment(\.scenePhase) private var scenePhase
+
+    var currentFontName: String {
+        let languageCode = Locale.current.language.languageCode?.identifier
+        switch languageCode {
+        case "ja":
+            return "A-OTF Shin Go Pro M"
+        case "ko":
+            fallthrough
+        default:
+            return "GmarketSansTTFMedium"
+        }
+    }
 
     var body: some View {
             VStack(spacing: 20) {
                 Text(audioManager.songs[audioManager.currentIndex].title)
-                    .font(.custom("GmarketSansTTFMedium", size: 24))
+                    .font(.custom(currentFontName, size: 24))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
+                    .foregroundColor(Color(.label))
 
                 Text(audioManager.songs[audioManager.currentIndex].artist)
-                    .font(.custom("GmarketSansTTFMedium", size: 18))
+                    .font(.custom(currentFontName, size: 18))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
+                    .foregroundColor(Color(.label))
 
                 Text(audioManager.currentLyric)
-                    .font(.custom("GmarketSansTTFMedium", size: 20))
+                    .font(.custom(currentFontName, size: 20))
                     .multilineTextAlignment(.center)
                     .padding()
                     .background(
                         LinearGradient(
-                            gradient: Gradient(colors: [.black.opacity(0.3), .black.opacity(0.1)]),
-                            startPoint: .top, endPoint: .bottom
+                            gradient: Gradient(colors: [
+                                colorScheme == .dark ? Color.white.opacity(0.1) : Color.black.opacity(0.3),
+                                colorScheme == .dark ? Color.white.opacity(0.05) : Color.black.opacity(0.1)
+                            ]),
+                            startPoint: .top,
+                            endPoint: .bottom
                         )
                         .cornerRadius(12)
                         .shadow(radius: 5)
                     )
                     .padding(.horizontal)
+                    .foregroundColor(Color(.label))
 
                 HStack(spacing: 40) {
                     // Previous button with haptic
@@ -68,6 +88,7 @@ struct ContentView: View {
                 .padding(.top, 10)
             }
             .padding()
+            .background(Color(.systemBackground))
             .onChange(of: scenePhase) { phase in
                 if phase == .background {
                     audioManager.saveCurrentPosition()
