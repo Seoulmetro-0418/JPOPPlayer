@@ -26,6 +26,6 @@
 ### Reference
 
 	Change the song informations to your own. (All of the information is just example)
-	You can see examples of lyrics in the Excel file.
+	You can see examples of lyrics in both Excel and Swift files.
  	Both light and dark modes are supported. (You can change the style or color.)
   	Music files are not included due to copyright issues. Please add the music files yourself.
