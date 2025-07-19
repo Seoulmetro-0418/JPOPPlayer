@@ -10,6 +10,7 @@
 	⏱️ Lyric Timeline: Syncs lyrics with the current playback time so you can follow along easily.
 	📝 Customizable Lyrics: Add or edit lyrics manually to fit your version or learning style.
 	📁 Local Music Support: Play audio files stored on your device.
+ 	📌 Favorites and playlist functionality
 	🇯🇵 Language Learning Friendly: Great for Japanese learners who want to practice through songs.
 
 ### Purpose
@@ -21,7 +22,6 @@
 ### Roadmap
 
 	🌐 Automatic online lyric fetching
-	📌 Favorites and playlist functionality
 
 ### Reference
 
