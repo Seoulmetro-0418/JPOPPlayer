@@ -1,8 +1,8 @@
 # JPOPPlayer 🎧🇯🇵
 
-[![🇰🇷 한국어](https://img.shields.io/badge/🇰🇷-%ED%95%9C%EA%B5%AD%EC%96%B4-blue?style=for-the-badge)](#korean) | 
-[![🇨🇳 中文](https://img.shields.io/badge/🇨🇳-%E4%B8%AD%E6%96%87-brightgreen?style=for-the-badge)](#chinese) | 
-[![🇺🇸 English](https://img.shields.io/badge/🇺🇸-English-red?style=for-the-badge)](#english) | 
+[![🇰🇷 한국어](https://img.shields.io/badge/🇰🇷-%ED%95%9C%EA%B5%AD%EC%96%B4-blue?style=for-the-badge)](#korean) 
+[![🇨🇳 中文](https://img.shields.io/badge/🇨🇳-%E4%B8%AD%E6%96%87-brightgreen?style=for-the-badge)](#chinese) 
+[![🇺🇸 English](https://img.shields.io/badge/🇺🇸-English-red?style=for-the-badge)](#english) 
 [![🇯🇵 日本語](https://img.shields.io/badge/🇯🇵-%E6%97%A5%E6%9C%AC%E8%AA%9E-yellow?style=for-the-badge)](#japanese)
 ---
 
